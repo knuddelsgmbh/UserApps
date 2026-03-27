@@ -4,8 +4,11 @@ if (typeof Client !== 'undefined') {
     pageData = Client.pageData;
 }
 
-// Begrüßung anzeigen
-document.getElementById('greeting').textContent = 'Hallo, ' + (pageData.nickname || 'Gast') + '!';
+window.addEventListener('load', () => {
+    // Seite komplett geladen
+    // Begrüßung anzeigen
+    document.getElementById('greeting').textContent = 'Hallo, ' + (pageData.nickname || 'Gast') + '!';
+});
 
 // Events vom Server empfangen
 if (typeof Client !== 'undefined') {
