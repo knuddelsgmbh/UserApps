@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "none",
+        "outDir": "./build",
+        "rootDir": "./",
+        "strict": true,
+        "alwaysStrict": false,
+        "noEmitOnError": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "*.ts",
+        "types/**/*.d.ts"
+    ],
+    "exclude": [
+        "www"
+    ]
+}
